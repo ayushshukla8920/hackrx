@@ -1,5 +1,4 @@
 import re
-
 def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> list:
 	sentences = re.split(r'(?<=[.!?]) +', text)
 	chunks = []
@@ -12,7 +11,6 @@ def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> list:
 			current_chunk = sentence + " "
 	if current_chunk:
 		chunks.append(current_chunk.strip())
-	# Add overlap
 	if overlap > 0 and len(chunks) > 1:
 		for i in range(1, len(chunks)):
 			overlap_text = chunks[i-1][-overlap:]
