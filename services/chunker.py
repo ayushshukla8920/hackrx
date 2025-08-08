@@ -1,11 +1,6 @@
-# ...existing code...
-
 import re
 
 def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> list:
-	"""
-	Splits text into chunks of specified size with optional overlap.
-	"""
 	sentences = re.split(r'(?<=[.!?]) +', text)
 	chunks = []
 	current_chunk = ""
