@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+requests
+PyPDF2
+pinecone
+azure-ai-inference
+python-dotenv
+openai
