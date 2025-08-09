@@ -6,3 +6,7 @@ PyMuPDF
 python-dotenv
 google-generativeai
 chromadb
+python-pptx
+openpyxl
+Pillow
+pytesseract

@@ -3,6 +3,8 @@ import chromadb
 from dotenv import load_dotenv
 import google.generativeai as genai
 load_dotenv()
+import logging
+logger = logging.getLogger(__name__)
 try:
     GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
 except KeyError:
@@ -22,13 +24,13 @@ def get_embeddings(texts: list[str], task_type="retrieval_document") -> list[lis
         )
         return result['embedding']
     except Exception as e:
-        print(f"An error occurred during Google embedding: {e}")
+        logger.error(f"An error occurred during Google embedding: {e}")
         return [[] for _ in texts]
 def index_chunks(chunks: list[str], namespace: str):
-    print(f"[LOCAL DB] Indexing {len(chunks)} chunks using Google embeddings...")
+    logger.info(f"[LOCAL DB] Indexing {len(chunks)} chunks using Google embeddings...")
     embeddings = get_embeddings(chunks)
     if not any(embeddings):
-        print("[LOCAL DB] ERROR: Could not generate any embeddings. Skipping indexing.")
+        logger.error("[LOCAL DB] ERROR: Could not generate any embeddings. Skipping indexing.")
         return
     ids = [str(i) for i in range(len(chunks))]
     collection.add(
@@ -36,9 +38,9 @@ def index_chunks(chunks: list[str], namespace: str):
         documents=chunks,
         ids=ids
     )
-    print("[LOCAL DB] Indexing complete.")
+    logger.info("[LOCAL DB] Indexing complete.")
 def query_chunks(query: str, namespace: str, top_k: int = 3) -> list:
-    print(f"[LOCAL DB] Querying for: '{query[:40]}...' using Google embeddings.")
+    logger.info(f"[LOCAL DB] Querying for: '{query[:40]}...' using Google embeddings.")
     query_embedding = get_embeddings([query], task_type="retrieval_query")
     if not query_embedding:
         return []
@@ -50,5 +52,5 @@ def query_chunks(query: str, namespace: str, top_k: int = 3) -> list:
 def check_if_indexed(namespace: str) -> bool:
     count = collection.count()
     is_indexed = count > 0
-    print(f"[LOCAL DB] Checking if indexed... Found {count} items. Indexed: {is_indexed}")
+    logger.info(f"[LOCAL DB] Checking if indexed... Found {count} items. Indexed: {is_indexed}")
     return is_indexed
