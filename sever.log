@@ -1,4 +1,4 @@
-2025-08-09 18:51:24,027 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:51:24,027 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:51:24,030 - INFO - services.vectordb_manager - Collection for '9c4e52cd01...' found with 87 items. Indexed: True
 2025-08-09 18:51:24,031 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D
 2025-08-09 18:51:24,031 - INFO - routers.router - Number of questions received: 4
@@ -12,7 +12,7 @@
 2025-08-09 18:51:24,036 - INFO - services.vectordb_manager - Querying collection '9c4e52cd01...' for: 'I did a cataract treatment of Rs 100,000...'
 2025-08-09 18:51:24,037 - INFO - services.vectordb_manager - Querying collection '9c4e52cd01...' for: 'Give me a list of documents to be upload...'
 2025-08-09 18:51:28,826 - INFO - routers.router - All questions processed successfully.
-2025-08-09 18:51:35,361 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:51:35,361 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:51:35,363 - INFO - services.vectordb_manager - Collection for '9c4e52cd01...' found with 87 items. Indexed: True
 2025-08-09 18:51:35,363 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/Arogya%20Sanjeevani%20Policy%20-%20CIN%20-%20U10200WB1906GOI001713%201.pdf?sv=2023-01-03&st=2025-07-21T08%3A29%3A02Z&se=2025-09-22T08%3A29%3A00Z&sr=b&sp=r&sig=nzrz1K9Iurt%2BBXom%2FB%2BMPTFMFP3PRnIvEsipAX10Ig4%3D
 2025-08-09 18:51:35,363 - INFO - routers.router - Number of questions received: 1
@@ -20,7 +20,7 @@
 2025-08-09 18:51:35,364 - INFO - routers.router - Processing question: I have raised a claim for hospitalization for Rs 200,000 with HDFC, and it's approved. My total expenses are Rs 250,000. Can I raise the remaining Rs 50,000 with you?
 2025-08-09 18:51:35,364 - INFO - services.vectordb_manager - Querying collection '9c4e52cd01...' for: 'I have raised a claim for hospitalizatio...'
 2025-08-09 18:51:38,428 - INFO - routers.router - All questions processed successfully.
-2025-08-09 18:51:41,248 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:51:41,248 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:51:41,250 - INFO - services.vectordb_manager - Collection for namespace '0e0f14a365...' not found.
 2025-08-09 18:51:41,250 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/Super_Splendor_(Feb_2023).pdf?sv=2023-01-03&st=2025-07-21T08%3A10%3A00Z&se=2025-09-22T08%3A10%3A00Z&sr=b&sp=r&sig=vhHrl63YtrEOCsAy%2BpVKr20b3ZUo5HMz1lF9%2BJh6LQ0%3D
 2025-08-09 18:51:41,250 - INFO - routers.router - Number of questions received: 5
@@ -42,7 +42,7 @@
 2025-08-09 18:51:47,121 - INFO - services.vectordb_manager - Querying collection '0e0f14a365...' for: 'What is the ideal spark plug gap recomme...'
 2025-08-09 18:51:47,123 - INFO - services.vectordb_manager - Querying collection '0e0f14a365...' for: 'Give me JS code to generate a random num...'
 2025-08-09 18:51:51,754 - INFO - routers.router - All questions processed successfully.
-2025-08-09 18:51:59,301 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:51:59,301 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:51:59,303 - INFO - services.vectordb_manager - Collection for namespace '147848df56...' not found.
 2025-08-09 18:51:59,303 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/Family%20Medicare%20Policy%20(UIN-%20UIIHLIP22070V042122)%201.pdf?sv=2023-01-03&st=2025-07-22T10%3A17%3A39Z&se=2025-08-23T10%3A17%3A00Z&sr=b&sp=r&sig=dA7BEMIZg3WcePcckBOb4QjfxK%2B4rIfxBs2%2F%2BNwoPjQ%3D
 2025-08-09 18:51:59,303 - INFO - routers.router - Number of questions received: 3
@@ -60,7 +60,7 @@
 2025-08-09 18:52:04,158 - INFO - services.vectordb_manager - Querying collection '147848df56...' for: 'I renewed my policy yesterday, and I hav...'
 2025-08-09 18:52:04,159 - INFO - services.vectordb_manager - Querying collection '147848df56...' for: 'Is abortion covered?...'
 2025-08-09 18:52:08,461 - INFO - routers.router - All questions processed successfully.
-2025-08-09 18:52:14,779 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:52:14,779 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:52:14,781 - INFO - services.vectordb_manager - Collection for namespace 'eb78d33f9f...' not found.
 2025-08-09 18:52:14,781 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/indian_constitution.pdf?sv=2023-01-03&st=2025-07-28T06%3A42%3A00Z&se=2026-11-29T06%3A42%3A00Z&sr=b&sp=r&sig=5Gs%2FOXqP3zY00lgciu4BZjDV5QjTDIx7fgnfdz6Pu24%3D
 2025-08-09 18:52:14,781 - INFO - routers.router - Number of questions received: 10
@@ -92,7 +92,7 @@
 2025-08-09 18:52:53,542 - INFO - routers.router - Processing question: What restrictions can the State impose on the right to freedom of speech under Article 19(2)?
 2025-08-09 18:52:53,543 - INFO - services.vectordb_manager - Querying collection 'eb78d33f9f...' for: 'What restrictions can the State impose o...'
 2025-08-09 18:52:56,718 - INFO - routers.router - All questions processed successfully.
-2025-08-09 18:53:09,085 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:53:09,085 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:53:09,088 - INFO - services.vectordb_manager - Collection for 'eb78d33f9f...' found with 937 items. Indexed: True
 2025-08-09 18:53:09,088 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/indian_constitution.pdf?sv=2023-01-03&st=2025-07-28T06%3A42%3A00Z&se=2026-11-29T06%3A42%3A00Z&sr=b&sp=r&sig=5Gs%2FOXqP3zY00lgciu4BZjDV5QjTDIx7fgnfdz6Pu24%3D
 2025-08-09 18:53:09,088 - INFO - routers.router - Number of questions received: 10
@@ -118,7 +118,7 @@
 2025-08-09 18:53:12,432 - INFO - routers.router - Processing question: If I'm denied admission to a public university because I'm from a backward community, can I do something?
 2025-08-09 18:53:12,433 - INFO - services.vectordb_manager - Querying collection 'eb78d33f9f...' for: 'If I'm denied admission to a public univ...'
 2025-08-09 18:53:16,404 - INFO - routers.router - All questions processed successfully.
-2025-08-09 18:53:28,356 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-09 18:53:28,356 - INFO - routers.router - Authorization header: Bearer token
 2025-08-09 18:53:28,359 - INFO - services.vectordb_manager - Collection for namespace 'cdffefe2dd...' not found.
 2025-08-09 18:53:28,359 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/assets/principia_newton.pdf?sv=2023-01-03&st=2025-07-28T07%3A20%3A32Z&se=2026-07-29T07%3A20%3A00Z&sr=b&sp=r&sig=V5I1QYyigoxeUMbnUKsdEaST99F5%2FDfo7wpKg9XXF5w%3D
 2025-08-09 18:53:28,359 - INFO - routers.router - Number of questions received: 12
