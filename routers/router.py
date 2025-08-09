@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from services.file_loader import extract_text_from_file
@@ -15,7 +15,9 @@ class QueryRequest(BaseModel):
     documents: str
     questions: list[str]
 @router.post("/hackrx/run")
-async def run_submission(payload: QueryRequest):
+async def run_submission(payload: QueryRequest, request: Request):
+    auth_header = request.headers.get("authorization")
+    logger.info(f"Authorization header: {auth_header}")
     try:
         document_url = payload.documents
         namespace = hashlib.sha256(document_url.encode()).hexdigest()
