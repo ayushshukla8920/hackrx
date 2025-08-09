@@ -3,8 +3,5 @@ uvicorn
 requests
 PyPDF2
 PyMuPDF
-pinecone
-azure-ai-inference
 python-dotenv
-openai
 google-generativeai
