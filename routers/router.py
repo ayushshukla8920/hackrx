@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from services.file_loader import extract_text_from_file
+from services.agentic_workflow import handle_agentic_workflow
 from services.chunker import chunk_text, clean_text
 from services.vectordb_manager import index_chunks, query_chunks, check_if_indexed
 from services.llm_answerer import generate_answer
@@ -39,6 +40,9 @@ async def run_submission(payload: QueryRequest, request: Request):
                 logger.info(f"Processing question: {question}")
                 context = await run_in_threadpool(query_chunks, question, ns)
                 answer, rationale = await run_in_threadpool(generate_answer, question, context)
+                if(answer == "handle_agentic_workflow()"):
+                    logger.info("Handling agentic workflow for question.")
+                    answer = await handle_agentic_workflow(document_url, question)
                 return {"question": question, "answer": answer, "rationale": rationale}
         tasks = [get_single_answer(question, namespace) for question in payload.questions]
         results = await asyncio.gather(*tasks)
