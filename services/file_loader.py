@@ -23,14 +23,29 @@ def extract_text_from_pptx(file_url: str) -> str:
 def extract_text_from_xlsx(file_url: str) -> str:
     response = requests.get(file_url)
     response.raise_for_status()
-    wb = load_workbook(io.BytesIO(response.content))
-    text = []
+    wb = load_workbook(io.BytesIO(response.content), read_only=True)
+    all_sheets_text = []
     for sheet in wb.worksheets:
-        for row in sheet.iter_rows():
-            for cell in row:
-                if cell.value:
-                    text.append(str(cell.value))
-    return " ".join(text)
+        headers = []
+        header_row_index = -1
+        for i, row in enumerate(sheet.iter_rows()):
+            potential_headers = [str(cell.value) for cell in row if cell.value is not None]
+            if len(potential_headers) > 1:
+                headers = potential_headers
+                header_row_index = i + 1
+                logger.info(f"Found header row at index {header_row_index} in sheet '{sheet.title}'")
+                break
+        if not headers:
+            logger.warning(f"Could not find a valid header row in sheet '{sheet.title}'. Skipping.")
+            continue
+        for row in sheet.iter_rows(min_row=header_row_index + 1):
+            row_data = []
+            for header, cell in zip(headers, row):
+                if cell.value is not None:
+                    row_data.append(f"{header} is {cell.value}")
+            if row_data:
+                all_sheets_text.append("Record: " + ", ".join(row_data) + ".")
+    return "\n".join(all_sheets_text)
 def extract_text_from_image(file_url: str) -> str:
     response = requests.get(file_url)
     response.raise_for_status()
@@ -61,4 +76,4 @@ def extract_text_from_file(file_url: str) -> str:
     elif file_type and file_type.startswith('image/') or file_extension in ('.jpeg', '.jpg', '.png'):
         return extract_text_from_image(file_url)
     else:
-        raise ValueError(f"Unsupported file type: {file_type}")
+        return "No content Found in Files"

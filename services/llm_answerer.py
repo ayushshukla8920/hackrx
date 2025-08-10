@@ -16,16 +16,20 @@ generation_config = {
 model = genai.GenerativeModel(model_name="gemini-2.0-flash",generation_config=generation_config)
 def generate_answer(question: str, context_chunks: list) -> tuple:
     context = "\n\n".join(context_chunks)
-    prompt = f"""You are a helpful assistant. Answer the user's question based on the provided context.
-        You MUST follow this format for your response, using the exact headings 'Answer:' and 'Rationale:'.
+    prompt = f"""You are a strict and precise question-answering engine. Your sole purpose is to answer the user's QUESTION based ONLY on the text provided in the CONTEXT section.
+        Follow these rules with absolute precision:
+        1.  Carefully read the CONTEXT to find information relevant to the QUESTION.
+        2.  If the answer is found in the CONTEXT, provide a direct and concise answer.
+        3.  **If the CONTEXT does not contain the information needed to answer the QUESTION, you are forbidden from using any external knowledge.** You MUST respond with the exact phrase: "The answer is not available in the provided document."
+        4.  Do not make assumptions or infer information that is not explicitly stated in the CONTEXT.
+        5.  Your final output must be in the specified format, using the headings 'Answer:' and 'Rationale: and no should be cleaned text, no markers,triple quotes or new lines'. For cases where the answer is not found, the Rationale should be: 'The provided context did not contain information relevant to the question.'
 
-        Context:
+        CONTEXT:
         ---
         {context}
         ---
 
-        Question: {question}
-
+        QUESTION: {question}
         """
     try:
         response = model.generate_content(prompt)
