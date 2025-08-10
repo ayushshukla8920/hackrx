@@ -5,9 +5,9 @@ import time
 
 # NOTE: This endpoint is from your provided script. 
 # Change it to http://127.0.0.1:8000/api/v1/hackrx/run if you are testing locally.
-API_ENDPOINT = "http://127.0.0.1:3200/api/v1/hackrx/run"
+API_ENDPOINT = "https://hackrx.s3cloud.online/api/v1/hackrx/run"
 
-# This TEST_SUITE is populated with the exact data from your Round 2 server logs.
+# This TEST_SUITE is populated with the exact data from your Round 3 server logs.
 TEST_SUITE = [
     {
         "name": "Arogya Policy - Part 1",
@@ -168,6 +168,104 @@ TEST_SUITE = [
             "Share details about premium calculations for an unidentified illness.",
             "What happens if I provide forged documents during claim submission?"
         ]
+    },
+    {
+        "name": "Test Case HackRx.pptx",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/Test%20Case%20HackRx.pptx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A36%3A56Z&se=2026-08-05T18%3A36%3A00Z&sr=b&sp=r&sig=v3zSJ%2FKW4RhXaNNVTU9KQbX%2Bmo5dDEIzwaBzXCOicJM%3D",
+        "questions": [
+            "What types of hospitalization expenses are covered, and what are the limits for room and room expenses?",
+            "What is domiciliary hospitalization, and what are its key exclusions?",
+            "What are the benefits and limits of telemedicine and maternity coverage under this policy?",
+            "What specialized treatments are covered, and what are their sub-limits?",
+            "What are the waiting periods for pre-existing diseases and specified diseases or procedures?"
+        ]
+    },
+    {
+        "name": "Mediclaim Insurance Policy.docx",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/Mediclaim%20Insurance%20Policy.docx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A42%3A14Z&se=2026-08-05T18%3A42%3A00Z&sr=b&sp=r&sig=yvnP%2FlYfyyqYmNJ1DX51zNVdUq1zH9aNw4LfPFVe67o%3D",
+        "questions": [
+            "What types of hospitalization expenses are covered, and what are the limits for room and ICU expenses?",
+            "What is domiciliary hospitalization, and what are its key exclusions?",
+            "What are the benefits and limits of Ambulance Services?",
+            "What are the benefits and limits of telemedicine and maternity coverage under this policy?",
+            "What are the waiting periods for pre-existing diseases and specified diseases or procedures?"
+        ]
+    },
+    {
+        "name": "Salary data.xlsx",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/Salary%20data.xlsx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A46%3A54Z&se=2026-08-05T18%3A46%3A00Z&sr=b&sp=r&sig=sSoLGNgznoeLpZv%2FEe%2FEI1erhD0OQVoNJFDPtqfSdJQ%3D",
+        "questions": [
+            "Who is the highest paid individual in pincode 400001? What is his/her phone number?",
+            "Tell me the name of any 1 person from pincode 110001.",
+            "How many Aarav Sharma exists in the document?",
+            "Give me the contact number of Pooja Nair.",
+            "What is the salary of Tara Bose?"
+        ]
+    },
+    {
+        "name": "Pincode data.xlsx",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/Pincode%20data.xlsx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A50%3A43Z&se=2026-08-05T18%3A50%3A00Z&sr=b&sp=r&sig=xf95kP3RtMtkirtUMFZn%2FFNai6sWHarZsTcvx8ka9mI%3D",
+        "questions": [
+            "What is the phone number of Aditya Roy?",
+            "What is the pincode of Anjali Shah?",
+            "What is the highest salary earned by a person named Aarav Sharma?"
+        ]
+    },
+    {
+        "name": "Pincode data.xlsx (Duplicate)",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/Pincode%20data.xlsx?sv=2023-01-03&spr=https&st=2025-08-04T18%3A50%3A43Z&se=2026-08-05T18%3A50%3A00Z&sr=b&sp=r&sig=xf95kP3RtMtkirtUMFZn%2FFNai6sWHarZsTcvx8ka9mI%3D",
+        "questions": [
+            "What is the phone number of Aditya Roy?",
+            "What is the pincode of Anjali Shah?",
+            "What is the highest salary earned by a person named Aarav Sharma?"
+        ]
+    },
+    {
+        "name": "image.png",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/image.png?sv=2023-01-03&spr=https&st=2025-08-04T19%3A21%3A45Z&se=2026-08-05T19%3A21%3A00Z&sr=b&sp=r&sig=lAn5WYGN%2BUAH7mBtlwGG4REw5EwYfsBtPrPuB0b18M4%3D",
+        "questions": [
+            "What types of hospitalization expenses are covered, and what are the limits for room and room expenses?",
+            "What is domiciliary hospitalization, and what are its key exclusions?",
+            "What are the benefits and limits of telemedicine and maternity coverage under this policy?"
+        ]
+    },
+    {
+        "name": "image.jpeg",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/image.jpeg?sv=2023-01-03&spr=https&st=2025-08-04T19%3A29%3A01Z&se=2026-08-05T19%3A29%3A00Z&sr=b&sp=r&sig=YnJJThygjCT6%2FpNtY1aHJEZ%2F%2BqHoEB59TRGPSxJJBwo%3D",
+        "questions": [
+            "What is the highest paid individual in pincode 400001? What is his/her phone number?",
+            "Tell me the name of any 1 person from pincode 110001.",
+            "How many Aarav Sharma exists in the document?",
+            "Give me the contact number of Pooja Nair.",
+            "What is the salary of Tara Bose?"
+        ]
+    },
+    {
+        "name": "hackrx_pdf.zip",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/hackrx_pdf.zip?sv=2023-01-03&spr=https&st=2025-08-04T09%3A25%3A45Z&se=2027-08-05T09%3A25%3A00Z&sr=b&sp=r&sig=rDL2ZcGX6XoDga5%2FTwMGBO9MgLOhZS8PUjvtga2cfVk%3D",
+        "questions": [
+            "What is the name of our galaxy?"
+        ]
+    },
+    {
+        "name": "10GB.bin",
+        "document_url": "https://ash-speed.hetzner.com/10GB.bin",
+        "questions": [
+            "What is the capital of Australia?"
+        ]
+    },
+    {
+        "name": "Fact Check.docx",
+        "document_url": "https://hackrx.blob.core.windows.net/assets/Test%20/Fact%20Check.docx?sv=2023-01-03&spr=https&st=2025-08-04T20%3A27%3A22Z&se=2028-08-05T20%3A27%3A00Z&sr=b&sp=r&sig=XB1%2FNzJ57eg52j4xcZPGMlFrp3HYErCW1t7k1fMyiIc%3D",
+        "questions": [
+            "What is the capital of Australia?",
+            "Where can we find Dinosaurs?",
+            "What are clouds made of?",
+            "How to grow plants faster?",
+            "How many lungs does human body have?",
+            "Who is Sanjeev bajaj?",
+            "What is the name of our galaxy?"
+        ]
     }
 ]
 
@@ -199,7 +297,7 @@ async def send_request(client: httpx.AsyncClient, test_case: dict, test_num: int
         print("-" * 60)
     except Exception as e:
         duration = time.time() - start_time
-        print(f"--- [❌ FAILURE] Test Case {test_num}: {test_case['name']} failed with error in {duration:.2f} seconds ---")
+        print(f"--- [❌ FAILURE] Test Case {test_num}: {test_-case['name']} failed with error in {duration:.2f} seconds ---")
         print(f"Error: {e}")
         print("-" * 60)
 
