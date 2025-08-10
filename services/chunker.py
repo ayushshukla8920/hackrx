@@ -1,4 +1,8 @@
 import re
+def clean_text(text: str) -> str:
+    text = re.sub(r'\n+', ' ', text)
+    text = re.sub(r'\s{2,}', ' ', text)
+    return text.strip()
 def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> list:
 	sentences = re.split(r'(?<=[.!?]) +', text)
 	chunks = []

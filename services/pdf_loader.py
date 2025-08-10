@@ -8,6 +8,7 @@ def extract_text_from_pdf(pdf_url: str) -> str:
     try:
         response = requests.get(pdf_url)
         response.raise_for_status()
+        logger.info("Downloading Done, processing PDF")
         with fitz.open(stream=response.content, filetype="pdf") as doc:
             text = ""
             for page in doc:

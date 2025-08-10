@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from services.file_loader import extract_text_from_file
-from services.chunker import chunk_text
+from services.chunker import chunk_text, clean_text
 from services.vectordb_manager import index_chunks, query_chunks, check_if_indexed
 from services.llm_answerer import generate_answer
 from fastapi.concurrency import run_in_threadpool
@@ -27,7 +27,8 @@ async def run_submission(payload: QueryRequest, request: Request):
         if not is_indexed:
             logger.info(f"Indexing document for namespace: {namespace}")
             text = await run_in_threadpool(extract_text_from_file, document_url)
-            chunks = await run_in_threadpool(chunk_text, text)
+            cleaned_text = clean_text(text)
+            chunks = await run_in_threadpool(chunk_text, cleaned_text)
             await run_in_threadpool(index_chunks, chunks, namespace)
             logger.info("Indexing complete.")
         else:
