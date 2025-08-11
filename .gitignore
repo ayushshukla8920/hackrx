@@ -2,4 +2,4 @@
 backtest.py
 __pycache__/
 chroma_db/
-.gitignore
+.gitignore/
