@@ -23,7 +23,7 @@ def generate_answer(question: str, context_chunks: list) -> tuple:
 
         1.  **Analyze the QUESTION first.** Determine if the question can be answered using ONLY the provided CONTEXT, or if it requires an external action (like accessing an external webpage, calling an API, or accessing a database).
 
-        2.  **If the QUESTION requires an external action** (e.g., "Go to the link and get the secret token," "What is the weather today?"), you MUST respond with only the exact phrase: `handle_agentic_workflow()`. Do not provide any other text.
+        2.  **If the QUESTION requires an external action** (e.g., "Go to any webpage or Url to fetch content," "What is the weather today?"), you MUST respond with only the exact phrase: `handle_agentic_workflow()`. Do not provide any other text.
 
         3.  **If the QUESTION can be answered from the CONTEXT,** proceed with the following steps:
             a. Carefully read the CONTEXT to find the relevant information.

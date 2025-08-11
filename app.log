@@ -1,0 +1,18 @@
+2025-08-11 16:22:37,565 - INFO - root - Application startup complete.
+2025-08-11 16:22:39,975 - INFO - routers.router - Authorization header: None
+2025-08-11 16:22:40,006 - INFO - services.vectordb_manager - Collection for '621dca1261...' found with 1 items. Indexed: True
+2025-08-11 16:22:40,006 - INFO - routers.router - Received new request for document: https://register.hackrx.in/utils/get-secret-token?hackTeam=3234
+2025-08-11 16:22:40,006 - INFO - routers.router - Number of questions received: 1
+2025-08-11 16:22:40,006 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 16:22:40,006 - INFO - routers.router - Processing question: Go to the link and get the secret token and return it
+2025-08-11 16:22:40,007 - INFO - services.vectordb_manager - Querying collection '621dca1261...' for: 'Go to the link and get the secret token ...'
+2025-08-11 16:22:42,696 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 16:22:42,696 - INFO - services.agentic_workflow - AGENT: Differentiating and extracting content from https://register.hackrx.in/utils/get-secret-token?hackTeam=3234
+2025-08-11 16:22:43,785 - INFO - services.agentic_workflow - AGENT: Identified document as a webpage. Processing...
+2025-08-11 16:22:43,787 - INFO - services.agentic_workflow - 🔒 Your Secret Token\n95f0aaf9643ebcf636e49171745b93f44dd0af2cef3482a0cf1b02819f8459bc...
+2025-08-11 16:22:43,787 - INFO - services.agentic_workflow - AGENT: Sending final prompt to LLM for a precise answer.
+2025-08-11 16:22:43,787 - INFO - services.agentic_workflow - AGENT: Instruction extracted: fetch_url_content(),{document_url}
+2025-08-11 16:22:43,787 - INFO - services.agentic_workflow - AGENT: Differentiating and extracting content from https://register.hackrx.in/utils/get-secret-token?hackTeam=3234
+2025-08-11 16:22:49,761 - INFO - services.agentic_workflow - AGENT: Identified document as a webpage. Processing...
+2025-08-11 16:22:49,763 - INFO - services.agentic_workflow - 🔒 Your Secret Token\n95f0aaf9643ebcf636e49171745b93f44dd0af2cef3482a0cf1b02819f8459bc...
+2025-08-11 16:22:52,451 - INFO - routers.router - All questions processed successfully.
