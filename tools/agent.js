@@ -19,7 +19,7 @@ Your reasoning process is a loop:
 - An output is WRONG if it contains words like "the next step is", "you should call", "the landmark is", or any form of explanation or instruction.
 - If your reasoning leads you to a new URL, you MUST call it with the tool. Do not describe it in the output.
 `;
-const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || "AIzaSyC0r2kdGvX5sD5jltZOOAZFKh4ke9JspFo";
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 if (!GOOGLE_API_KEY) {
     throw new Error("FATAL ERROR: GOOGLE_API_KEY environment variable not found.");
 }
