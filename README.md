@@ -1,9 +1,8 @@
-Current Reponse Time : 14.69s {Local}
-
-Current Reponse Time : 13.64s {AWS}
-
+**LLM based Query Retrieval System**
 
 To run the project: 
+
+Python and NodeJS Runtimes are Required
 
 ```
 pip install -r requirements.txt
