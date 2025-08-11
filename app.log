@@ -1,0 +1,24 @@
+2025-08-11 16:27:19,599 - INFO - root - Application startup complete.
+2025-08-11 16:27:22,743 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-11 16:27:22,757 - INFO - services.vectordb_manager - Collection for namespace 'b59dfdc4f9...' not found.
+2025-08-11 16:27:22,757 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/hackrx/rounds/News.pdf?sv=2023-01-03&spr=https&st=2025-08-07T17%3A10%3A11Z&se=2026-08-08T17%3A10%3A00Z&sr=b&sp=r&sig=ybRsnfv%2B6VbxPz5xF7kLLjC4ehU0NF7KDkXua9ujSf0%3D
+2025-08-11 16:27:22,757 - INFO - routers.router - Number of questions received: 5
+2025-08-11 16:27:22,758 - INFO - routers.router - Indexing document for namespace: b59dfdc4f954879c76b6b5195db6aacf585a6bfa6911c62595e747239b65d4d5
+2025-08-11 16:27:22,758 - INFO - services.file_loader - Downloading file from https://hackrx.blob.core.windows.net/hackrx/rounds/News.pdf?sv=2023-01-03&spr=https&st=2025-08-07T17%3A10%3A11Z&se=2026-08-08T17%3A10%3A00Z&sr=b&sp=r&sig=ybRsnfv%2B6VbxPz5xF7kLLjC4ehU0NF7KDkXua9ujSf0%3D
+2025-08-11 16:27:22,758 - INFO - services.pdf_loader - Downloading PDF
+2025-08-11 16:27:23,248 - INFO - services.pdf_loader - Downloading Done, processing PDF
+2025-08-11 16:27:23,270 - INFO - services.pdf_loader - PDF text extraction complete.
+2025-08-11 16:27:23,276 - INFO - services.vectordb_manager - Indexing 1 chunks into collection: 'b59dfdc4f9...'
+2025-08-11 16:27:25,399 - INFO - services.vectordb_manager - Indexing complete.
+2025-08-11 16:27:25,399 - INFO - routers.router - Indexing complete.
+2025-08-11 16:27:25,399 - INFO - routers.router - Processing question: ട്രംപ് ഏത് ദിവസമാണ് 100% ശുൽകം പ്രഖ്യാപിച്ചത്?
+2025-08-11 16:27:25,399 - INFO - routers.router - Processing question: ഏത് ഉത്പന്നങ്ങൾക്ക് ഈ 100% ഇറക്കുമതി ശുൽകം ബാധകമാണ്?
+2025-08-11 16:27:25,399 - INFO - routers.router - Processing question: ഏത് സാഹചര്യത്തിൽ ഒരു കമ്പനിയ്ക്ക് ഈ 100% ശുൽകത്തിൽ നിന്നും നിന്നും ഒഴികെയാക്കും?
+2025-08-11 16:27:25,399 - INFO - routers.router - Processing question: What was Apple’s investment commitment and what was its objective?
+2025-08-11 16:27:25,399 - INFO - routers.router - Processing question: What impact will this new policy have on consumers and the global market?
+2025-08-11 16:27:25,400 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'ട്രംപ് ഏത് ദിവസമാണ് 100% ശുൽകം പ്രഖ്യാപി...'
+2025-08-11 16:27:25,401 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'ഏത് ഉത്പന്നങ്ങൾക്ക് ഈ 100% ഇറക്കുമതി ശുൽ...'
+2025-08-11 16:27:25,401 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'What impact will this new policy have on...'
+2025-08-11 16:27:25,402 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'ഏത് സാഹചര്യത്തിൽ ഒരു കമ്പനിയ്ക്ക് ഈ 100%...'
+2025-08-11 16:27:25,402 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'What was Apple’s investment commitment a...'
+2025-08-11 16:27:29,658 - INFO - routers.router - All questions processed successfully.

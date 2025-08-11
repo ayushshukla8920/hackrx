@@ -29,6 +29,7 @@ def generate_answer(question: str, context_chunks: list) -> tuple:
             a. Carefully read the CONTEXT to find the relevant information.
             b. If the answer is found, provide a direct and concise answer.
             c. **If the CONTEXT does not contain the answer, you are forbidden from using any external knowledge.** You MUST respond with the exact phrase: "The answer is not available in the provided document."
+            d. **The Language of the answers should match the Language of the Provided Context.
 
         4.  **Your final output must be in the specified format.** For cases where the answer is not found, the Rationale should be: 'The provided context did not contain information relevant to the question.'
 
