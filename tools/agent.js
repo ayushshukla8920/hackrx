@@ -2,6 +2,7 @@ import * as cheerio from 'cheerio';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const pdf = require('pdf-parse');
+import 'dotenv/config'
 const SYSTEM_PROMPT = `
 You are a single-purpose AI agent. Your mission is to find the specific answer to the user's initial question and nothing else.
 

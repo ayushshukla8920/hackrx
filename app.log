@@ -1,0 +1,83 @@
+2025-08-11 20:29:07,830 - INFO - root - Application startup complete.
+2025-08-11 20:29:13,764 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-11 20:29:13,816 - INFO - services.vectordb_manager - Collection for 'b59dfdc4f9...' found with 1 items. Indexed: True
+2025-08-11 20:29:13,816 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/hackrx/rounds/News.pdf?sv=2023-01-03&spr=https&st=2025-08-07T17%3A10%3A11Z&se=2026-08-08T17%3A10%3A00Z&sr=b&sp=r&sig=ybRsnfv%2B6VbxPz5xF7kLLjC4ehU0NF7KDkXua9ujSf0%3D
+2025-08-11 20:29:13,817 - INFO - routers.router - Number of questions received: 5
+2025-08-11 20:29:13,817 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:29:13,817 - INFO - routers.router - Processing question: ട്രംപ് ഏത് ദിവസമാണ് 100% ശുൽകം പ്രഖ്യാപിച്ചത്?
+2025-08-11 20:29:13,817 - INFO - routers.router - Processing question: ഏത് ഉത്പന്നങ്ങൾക്ക് ഈ 100% ഇറക്കുമതി ശുൽകം ബാധകമാണ്?
+2025-08-11 20:29:13,817 - INFO - routers.router - Processing question: ഏത് സാഹചര്യത്തിൽ ഒരു കമ്പനിയ്ക്ക് ഈ 100% ശുൽകത്തിൽ നിന്നും നിന്നും ഒഴികെയാക്കും?
+2025-08-11 20:29:13,817 - INFO - routers.router - Processing question: What was Apple’s investment commitment and what was its objective?
+2025-08-11 20:29:13,817 - INFO - routers.router - Processing question: What impact will this new policy have on consumers and the global market?
+2025-08-11 20:29:13,817 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'ട്രംപ് ഏത് ദിവസമാണ് 100% ശുൽകം പ്രഖ്യാപി...'
+2025-08-11 20:29:13,818 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'ഏത് ഉത്പന്നങ്ങൾക്ക് ഈ 100% ഇറക്കുമതി ശുൽ...'
+2025-08-11 20:29:13,818 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'What impact will this new policy have on...'
+2025-08-11 20:29:13,818 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'ഏത് സാഹചര്യത്തിൽ ഒരു കമ്പനിയ്ക്ക് ഈ 100%...'
+2025-08-11 20:29:13,818 - INFO - services.vectordb_manager - Querying collection 'b59dfdc4f9...' for: 'What was Apple’s investment commitment a...'
+2025-08-11 20:29:19,575 - INFO - routers.router - All questions processed successfully.
+2025-08-11 20:29:22,450 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-11 20:29:22,492 - INFO - services.vectordb_manager - Collection for 'efccd1ed05...' found with 4 items. Indexed: True
+2025-08-11 20:29:22,493 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/hackrx/rounds/FinalRound4SubmissionPDF.pdf?sv=2023-01-03&spr=https&st=2025-08-07T14%3A23%3A48Z&se=2027-08-08T14%3A23%3A00Z&sr=b&sp=r&sig=nMtZ2x9aBvz%2FPjRWboEOZIGB%2FaGfNf5TfBOrhGqSv4M%3D
+2025-08-11 20:29:22,493 - INFO - routers.router - Number of questions received: 1
+2025-08-11 20:29:22,493 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:29:22,493 - INFO - routers.router - Processing question: What is my flight number?
+2025-08-11 20:29:22,493 - INFO - services.vectordb_manager - Querying collection 'efccd1ed05...' for: 'What is my flight number?...'
+2025-08-11 20:29:25,845 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 20:29:25,846 - INFO - services.agentic_workflow - --- Python Caller: Running agent from '/Users/ayushshukla/HackRx/tools' ---
+2025-08-11 20:29:45,229 - INFO - services.agentic_workflow - --- Python Caller: Node.js Agent Finished ---
+2025-08-11 20:29:45,230 - INFO - routers.router - All questions processed successfully.
+2025-08-11 20:30:07,506 - INFO - routers.router - Authorization header: None
+2025-08-11 20:30:07,545 - INFO - services.vectordb_manager - Collection for 'cda4f70e0b...' found with 1 items. Indexed: True
+2025-08-11 20:30:07,545 - INFO - routers.router - Received new request for document: https://register.hackrx.in/utils/get-secret-token?hackTeam=3233
+2025-08-11 20:30:07,545 - INFO - routers.router - Number of questions received: 1
+2025-08-11 20:30:07,545 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:30:07,545 - INFO - routers.router - Processing question: Go to the link and get the secret token and return it
+2025-08-11 20:30:07,546 - INFO - services.vectordb_manager - Querying collection 'cda4f70e0b...' for: 'Go to the link and get the secret token ...'
+2025-08-11 20:30:10,630 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 20:30:10,631 - INFO - services.agentic_workflow - --- Python Caller: Running agent from '/Users/ayushshukla/HackRx/tools' ---
+2025-08-11 20:30:29,429 - INFO - services.agentic_workflow - --- Python Caller: Node.js Agent Finished ---
+2025-08-11 20:30:29,430 - INFO - routers.router - All questions processed successfully.
+2025-08-11 20:31:04,595 - INFO - routers.router - Authorization header: None
+2025-08-11 20:31:04,599 - INFO - services.vectordb_manager - Collection for 'cda4f70e0b...' found with 1 items. Indexed: True
+2025-08-11 20:31:04,600 - INFO - routers.router - Received new request for document: https://register.hackrx.in/utils/get-secret-token?hackTeam=3233
+2025-08-11 20:31:04,600 - INFO - routers.router - Number of questions received: 1
+2025-08-11 20:31:04,600 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:31:04,600 - INFO - routers.router - Processing question: Go to the link and get the secret token and return it
+2025-08-11 20:31:04,601 - INFO - services.vectordb_manager - Querying collection 'cda4f70e0b...' for: 'Go to the link and get the secret token ...'
+2025-08-11 20:31:06,902 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 20:31:06,903 - INFO - services.agentic_workflow - --- Python Caller: Running agent from '/Users/ayushshukla/HackRx/tools' ---
+2025-08-11 20:31:11,659 - INFO - services.agentic_workflow - --- Python Caller: Node.js Agent Finished ---
+2025-08-11 20:31:11,660 - INFO - routers.router - All questions processed successfully.
+2025-08-11 20:31:22,717 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-11 20:31:22,721 - INFO - services.vectordb_manager - Collection for 'efccd1ed05...' found with 4 items. Indexed: True
+2025-08-11 20:31:22,721 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/hackrx/rounds/FinalRound4SubmissionPDF.pdf?sv=2023-01-03&spr=https&st=2025-08-07T14%3A23%3A48Z&se=2027-08-08T14%3A23%3A00Z&sr=b&sp=r&sig=nMtZ2x9aBvz%2FPjRWboEOZIGB%2FaGfNf5TfBOrhGqSv4M%3D
+2025-08-11 20:31:22,721 - INFO - routers.router - Number of questions received: 1
+2025-08-11 20:31:22,721 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:31:22,721 - INFO - routers.router - Processing question: What is my flight number?
+2025-08-11 20:31:22,721 - INFO - services.vectordb_manager - Querying collection 'efccd1ed05...' for: 'What is my flight number?...'
+2025-08-11 20:31:25,170 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 20:31:25,170 - INFO - services.agentic_workflow - --- Python Caller: Running agent from '/Users/ayushshukla/HackRx/tools' ---
+2025-08-11 20:31:35,010 - INFO - services.agentic_workflow - --- Python Caller: Node.js Agent Finished ---
+2025-08-11 20:31:35,011 - INFO - routers.router - All questions processed successfully.
+2025-08-11 20:32:23,042 - INFO - routers.router - Authorization header: Bearer 39060f36f127a425dd18def07971689e5f43460ed969f36b2b52f5d2270a3677
+2025-08-11 20:32:23,045 - INFO - services.vectordb_manager - Collection for 'efccd1ed05...' found with 4 items. Indexed: True
+2025-08-11 20:32:23,045 - INFO - routers.router - Received new request for document: https://hackrx.blob.core.windows.net/hackrx/rounds/FinalRound4SubmissionPDF.pdf?sv=2023-01-03&spr=https&st=2025-08-07T14%3A23%3A48Z&se=2027-08-08T14%3A23%3A00Z&sr=b&sp=r&sig=nMtZ2x9aBvz%2FPjRWboEOZIGB%2FaGfNf5TfBOrhGqSv4M%3D
+2025-08-11 20:32:23,045 - INFO - routers.router - Number of questions received: 1
+2025-08-11 20:32:23,045 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:32:23,046 - INFO - routers.router - Processing question: What is my flight number?
+2025-08-11 20:32:23,046 - INFO - services.vectordb_manager - Querying collection 'efccd1ed05...' for: 'What is my flight number?...'
+2025-08-11 20:32:25,584 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 20:32:25,585 - INFO - services.agentic_workflow - --- Python Caller: Running agent from '/Users/ayushshukla/HackRx/tools' ---
+2025-08-11 20:32:40,795 - INFO - services.agentic_workflow - --- Python Caller: Node.js Agent Finished ---
+2025-08-11 20:32:40,796 - INFO - routers.router - All questions processed successfully.
+2025-08-11 20:32:44,109 - INFO - routers.router - Authorization header: None
+2025-08-11 20:32:44,112 - INFO - services.vectordb_manager - Collection for 'cda4f70e0b...' found with 1 items. Indexed: True
+2025-08-11 20:32:44,112 - INFO - routers.router - Received new request for document: https://register.hackrx.in/utils/get-secret-token?hackTeam=3233
+2025-08-11 20:32:44,112 - INFO - routers.router - Number of questions received: 1
+2025-08-11 20:32:44,112 - INFO - routers.router - Document already exists. Skipping indexing.
+2025-08-11 20:32:44,112 - INFO - routers.router - Processing question: Go to the link and get the secret token and return it
+2025-08-11 20:32:44,113 - INFO - services.vectordb_manager - Querying collection 'cda4f70e0b...' for: 'Go to the link and get the secret token ...'
+2025-08-11 20:32:46,540 - INFO - routers.router - Handling agentic workflow for question.
+2025-08-11 20:32:46,541 - INFO - services.agentic_workflow - --- Python Caller: Running agent from '/Users/ayushshukla/HackRx/tools' ---
+2025-08-11 20:32:52,357 - INFO - services.agentic_workflow - --- Python Caller: Node.js Agent Finished ---
+2025-08-11 20:32:52,378 - INFO - routers.router - All questions processed successfully.
