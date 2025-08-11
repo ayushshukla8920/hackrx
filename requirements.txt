@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+requests
+PyPDF2
+PyMuPDF
+python-dotenv
+google-generativeai
+chromadb
+python-pptx
+python-docx
+openpyxl
+Pillow
+pytesseract
+bs4
